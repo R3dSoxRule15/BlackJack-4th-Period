@@ -1,13 +1,9 @@
 import greenfoot.*;
-public class Board extends World
-{
+public class Board extends World {
     private Deck deck;
     private GreenfootImage back = new GreenfootImage("back.jpg");
-    
-    
-    
-    public Board()
-    {    
+
+    public Board() {
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(800, 600, 1);
         back.scale(80, 100);
@@ -18,5 +14,5 @@ public class Board extends World
         deck.getDeck().get(3).setImage(back);
         addObject(deck.getDeck().get(3), 670, 50);
     }
-    
+
 }
