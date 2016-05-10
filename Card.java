@@ -40,7 +40,14 @@ public class Card extends Actor
             rank = "king";
             value = 10;
         }
+        
         setImage(rank + "_of_" + suit + ".png");
-        getImage().scale(60,80);
+        getImage().scale(80,100);
     }   
+    
+    public boolean equals(Object other) {
+        Card temp = (Card)other;
+        if (rank.equals(temp.rank) && suit.equals(temp.suit)) return true;
+        return false;
+    }
 }

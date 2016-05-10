@@ -1,4 +1,6 @@
 #BlueJ class context
 comment0.params=
 comment0.target=Card()
-numComments=1
+comment1.params=other
+comment1.target=boolean\ equals(java.lang.Object)
+numComments=2
